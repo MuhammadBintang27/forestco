@@ -1,27 +1,28 @@
 <x-app-layout>
-    <section class="mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-10">
-        <div class="max-w-2xl">
+    <section class="bg-cream-100">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 pt-14 pb-12 text-center">
             <span class="inline-block rounded-full bg-olive-100 px-3 py-1 text-xs font-medium text-olive-700">Sewa Properti Terpercaya</span>
-            <h1 class="mt-4 text-3xl sm:text-4xl font-semibold text-olive-900 leading-tight">
+            <h1 class="mx-auto mt-4 max-w-3xl text-3xl sm:text-5xl font-semibold text-olive-900 leading-tight">
                 Temukan kos, rumah, dan ruko impian Anda
             </h1>
-            <p class="mt-4 text-olive-700">
+            <p class="mx-auto mt-4 max-w-2xl text-olive-700">
                 Jelajahi katalog properti sewa kami, ajukan reservasi, dan urus semuanya secara online - dari verifikasi hingga pembayaran.
             </p>
-            <div class="mt-6 flex flex-wrap gap-3">
-                <a href="{{ route('katalog.index') }}"
-                   class="rounded-full bg-olive-700 px-6 py-3 text-sm font-medium text-white hover:bg-olive-800">
-                    Lihat Katalog
-                </a>
-                <a href="{{ route('cara-kerja') }}"
-                   class="rounded-full border border-olive-300 px-6 py-3 text-sm font-medium text-olive-800 hover:bg-cream-100">
-                    Cara Kerja
-                </a>
+
+            <a href="{{ route('katalog.index') }}"
+               class="mt-8 inline-block rounded-full bg-olive-700 px-8 py-3 text-sm font-medium text-white hover:bg-olive-800">
+                Lihat Katalog
+            </a>
+
+            <div class="mx-auto mt-8 grid max-w-2xl grid-cols-3 gap-4 text-center">
+                <div><p class="text-xl font-semibold text-olive-900">3 tipe</p><p class="text-xs text-olive-600">Kos, rumah, ruko</p></div>
+                <div><p class="text-xl font-semibold text-olive-900">100% online</p><p class="text-xs text-olive-600">Reservasi sampai bayar</p></div>
+                <div><p class="text-xl font-semibold text-olive-900">WhatsApp</p><p class="text-xs text-olive-600">Respons cepat & personal</p></div>
             </div>
         </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-4 sm:px-6 pb-16">
+    <section class="mx-auto max-w-6xl px-4 sm:px-6 pt-12 pb-16">
         <div class="flex items-center justify-between mb-6">
             <h2 class="text-xl font-semibold text-olive-900">Properti Unggulan</h2>
             <a href="{{ route('katalog.index') }}" class="text-sm font-medium text-olive-700 hover:underline">Lihat semua</a>
